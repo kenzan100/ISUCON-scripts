@@ -32,10 +32,24 @@ ISUCONの汎用的なスクリプト集
 
 ### Symlinkでレポ外の設定ファイルを管理する
 
-1. MySQLは、`ln`でハードリンクじゃないとNot foundって言われた
+1. MySQLは、`ln`でハードリンクじゃないとNot foundって言われた。Apparmourのせい。
 2. Nginxは、`ln -s`で大丈夫だった。
 
 両方とも、実体ファイルをレポ内に動かしてから、シムリンクを貼る。
+
+MySQL Apparmour
+```
+/etc/apparmor.d$ sudo vi usr.sbin.mysqld
+```
+
+```
+# Allow config access for isucon
+  /home/isucon/private_isu/** r,
+```
+
+```
+systemctl restart apparmor
+```
 
 
 ### 3. は まだできてないので、とりあえず洗い出し
@@ -52,4 +66,4 @@ ISUCONの汎用的なスクリプト集
 - 
 
 
-## 
+### 
