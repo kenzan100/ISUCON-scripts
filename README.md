@@ -68,9 +68,6 @@ systemctl restart apparmor
 
 ### デプロイ・ベンチ・集計を回すための準備
 
-マクロベンチ：Nginx access log | Alp
-マイクロ：Slow Query log | pt query log
-監視：Netdata
-
-- ログファイルの、各構成要素のありか（なければ有効化）A
-- ログファイルの、各構成要素のありか（なければ有効化）
+- マクロベンチ：Nginx access log | Alp
+- マイクロ：Slow Query log | pt query log
+- 監視：Netdata or Prometheus?
