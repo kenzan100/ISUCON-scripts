@@ -76,3 +76,7 @@ systemctl restart apparmor
 ## Default editor to VIM
 
 `sudo update-alternatives --set editor /usr/bin/vim.basic`
+
+## Install Latest Docker
+
+https://matsuand.github.io/docs.docker.jp.onthefly/engine/install/ubuntu/#installation-methods
