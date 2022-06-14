@@ -80,3 +80,9 @@ systemctl restart apparmor
 ## Install Latest Docker
 
 https://matsuand.github.io/docs.docker.jp.onthefly/engine/install/ubuntu/#installation-methods
+
+## "Too many open files" でやれること
+
+- `for pid in /proc/[0-9]*; do p=$(basename $pid); printf "%4d FDs for PID %6d; command=%s\n" $(ls $pid/fd | wc -l) $p "$(ps -p $p -o comm=)"; done | sort -n` で、何が fd とってるかみる
+- それに対して、 systemctl edit <service-name> で、[Service] FileNOFILEを増やす
+- Nginx の場合は、 `worker_rlimit_nofile` も増やす
