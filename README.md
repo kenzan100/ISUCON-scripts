@@ -71,3 +71,8 @@ systemctl restart apparmor
 - マクロベンチ：Nginx access log | Alp
 - マイクロ：Slow Query log | pt query log
 - 監視：Netdata or Prometheus?
+
+
+## Default editor to VIM
+
+`sudo update-alternatives --set editor /usr/bin/vim.basic`
