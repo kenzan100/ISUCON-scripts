@@ -87,3 +87,29 @@ https://matsuand.github.io/docs.docker.jp.onthefly/engine/install/ubuntu/#instal
 - `for pid in /proc/[0-9]*; do p=$(basename $pid); printf "%4d FDs for PID %6d; command=%s\n" $(ls $pid/fd | wc -l) $p "$(ps -p $p -o comm=)"; done | sort -n` で、何が fd とってるかみる
 - それに対して、 systemctl edit <service-name> で、[Service] FileNOFILEを増やす
 - Nginx の場合は、 `worker_rlimit_nofile` も増やす
+
+## Alp
+
+```
+##
+# Logging Settings
+##
+
+log_format ltsv "time:$time_local"
+  "\thost:$remote_addr"
+  "\tforwardedfor:$http_x_forwarded_for"
+  "\treq:$request"
+  "\tstatus:$status"
+  "\tmethod:$request_method"
+  "\turi:$request_uri"
+  "\tsize:$body_bytes_sent"
+  "\treferer:$http_referer"
+  "\tua:$http_user_agent"
+  "\treqtime:$request_time"
+  "\tcache:$upstream_http_x_cache"
+  "\truntime:$upstream_http_x_runtime"
+  "\tapptime:$upstream_response_time"
+  "\tvhost:$host";
+access_log /home/isucon/nginx_access.log ltsv;
+error_log /var/log/nginx/error.log;
+```
