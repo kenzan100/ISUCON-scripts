@@ -113,3 +113,8 @@ log_format ltsv "time:$time_local"
 access_log /home/isucon/nginx_access.log ltsv;
 error_log /var/log/nginx/error.log;
 ```
+
+## Redis
+
+install and run under systemd
+https://phoenixnap.com/kb/install-redis-on-ubuntu-20-04
