@@ -118,3 +118,8 @@ error_log /var/log/nginx/error.log;
 
 install and run under systemd
 https://phoenixnap.com/kb/install-redis-on-ubuntu-20-04
+
+
+## Port forwarding
+
+https://github.com/isucon/isucon11-final/blob/main/docs/manual.md#%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AE%E5%8B%95%E4%BD%9C%E7%A2%BA%E8%AA%8D
