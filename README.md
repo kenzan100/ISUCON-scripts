@@ -128,3 +128,7 @@ https://github.com/isucon/isucon11-final/blob/main/docs/manual.md#%E3%82%A2%E3%8
 
 https://phoenixnap.com/kb/mysql-remote-connection
 and bind address on mysqld.conf
+
+## How to use limited ports to internal bigger ports (e.g. 80 -> 3306)
+
+https://superuser.com/questions/661772/iptables-redirect-to-localhost#807612
