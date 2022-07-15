@@ -140,4 +140,4 @@ https://superuser.com/questions/661772/iptables-redirect-to-localhost#807612
 - DPMは、 https://docs.datadoghq.com/database_monitoring/setup_mysql/selfhosted/?tabs=mysql56 をやればいけた
 - APMは、 dd trace on Sinatra で、ダッシュボードのIntegrationからいけた
 - APMは、https://docs.datadoghq.com/tracing/trace_collection/dd_libraries/ruby/#mysql2 らへんでもっと色々リッチにできる
-- APM - `c.profiling.enabled = true` もやりたかったが、まだ試してない
+- APM - `c.profiling.enabled = true` もやりたかったが、まだ試してない (https://docs.datadoghq.com/tracing/profiler/enabling/ruby/?tabs=incode でいけるはず)
