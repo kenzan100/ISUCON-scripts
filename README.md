@@ -139,3 +139,4 @@ https://superuser.com/questions/661772/iptables-redirect-to-localhost#807612
 - Datadog-agent自体はAutoInstallerでほぼ迷わずいける（終了前にUninstallを忘れないで
 - DPMは、 https://docs.datadoghq.com/database_monitoring/setup_mysql/selfhosted/?tabs=mysql56 をやればいけた
 - APMは、 dd trace on Sinatra で、ダッシュボードのIntegrationからいけた
+- APMは、https://docs.datadoghq.com/tracing/trace_collection/dd_libraries/ruby/#mysql2 らへんでもっと色々リッチにできる
