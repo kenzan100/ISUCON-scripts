@@ -132,3 +132,10 @@ and bind address on mysqld.conf
 ## How to use limited ports to internal bigger ports (e.g. 80 -> 3306)
 
 https://superuser.com/questions/661772/iptables-redirect-to-localhost#807612
+
+## Datadog
+
+- US1を使う。そうじゃないとDPMが使えない
+- Datadog-agent自体はAutoInstallerでほぼ迷わずいける（終了前にUninstallを忘れないで
+- DPMは、 https://docs.datadoghq.com/database_monitoring/setup_mysql/selfhosted/?tabs=mysql56 をやればいけた
+- APMは、 dd trace on Sinatra で、ダッシュボードのIntegrationからいけた
