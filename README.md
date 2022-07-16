@@ -147,3 +147,7 @@ https://superuser.com/questions/661772/iptables-redirect-to-localhost#807612
   
 - `sudo journalctl -eu <service name>`
 - `/etc/systemd/journal.conf` Storage=none to supress
+
+## Relax limits
+  
+- ファイルディスクリプタ数の上限を増やすなど、nginx、アプリケーション、DB の各種 limit パラメーターを緩和しないとエラーが出て fail することがあります。
