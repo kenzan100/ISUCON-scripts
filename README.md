@@ -133,6 +133,10 @@ and bind address on mysqld.conf
 
 https://superuser.com/questions/661772/iptables-redirect-to-localhost#807612
 
+## Mysql perf tuning
+
+https://www.percona.com/blog/2020/06/30/mysql-101-parameters-to-tune-for-mysql-performance/
+
 ## Datadog
 
 - US1を使う。そうじゃないとDPMが使えない
