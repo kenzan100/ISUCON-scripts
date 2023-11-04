@@ -6,6 +6,11 @@ ISUCONの汎用的なスクリプト集
 
 利用規約に反していないか要確認。https://isucon.net/archives/56671734.html 読む限りは大丈夫そう？
 
+# 担当
+- Shinsuke - デプロイとか。DevOps的な。
+- Hiro - SQLとか。DB的な。
+- Yuta - Rubyとか。アプリケーション的な。
+
 # 汎用的な流れ
 
 1. セットアップ
